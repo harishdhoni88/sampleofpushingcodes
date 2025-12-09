@@ -17,7 +17,7 @@ test('login of fb', async({page}) => {
     await page.locator("//*[@name='birthday_day']").selectOption("2")
     await page.locator("//*[@id='month']").selectOption("1")
     await page.locator("//*[@id='year']").selectOption("2025")
-    await page.getByLabel("Male").check();
+
     await page.locator('//*[@name="reg_email__"]').fill("123456789")  
     await page.waitForTimeout(6000)
 
